@@ -1,0 +1,17 @@
+/*Кнопка закрытия модалки*/
+
+.button-close {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-color;
+  transition: $time $time-function;
+
+  &:hover {
+    fill: $accent-link-color;
+    transform: scale(1.1);
+  }
+}

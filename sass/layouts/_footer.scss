@@ -1,0 +1,14 @@
+.footer {
+  background: $footer-background;
+
+  &-wraper {
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+
+.join-container {
+  width: calc((100% - 30px * 3) / 4);
+}

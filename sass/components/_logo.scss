@@ -1,0 +1,24 @@
+.logo {
+  color: $accent-link-color;
+  font-family: Raleway, sans-serif;
+  @include font(26px, 1.19, 700);
+
+  &__sign {
+    color: $black-color;
+
+    &--white {
+      color: $primary-color;
+    }
+  }
+
+  /*Лого в хедере*/
+  &--top {
+    margin-right: 93px;
+  }
+
+  /*Лого в футере*/
+  &--bottom {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

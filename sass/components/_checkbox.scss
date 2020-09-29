@@ -1,0 +1,33 @@
+/*Чекбокс*/
+.checkbox {
+  @include flex();
+  margin-bottom: 30px;
+
+  &__icon {
+    display: inline-block;
+    margin-right: 7px;
+    padding-left: 12px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $text-color-black;
+    border-radius: 2px;
+  }
+
+  &__input:checked + &__icon {
+    border-radius: 2px;
+    border-color: $accent-link-color;
+    background-color: $accent-link-color;
+    background-image: url(../images/svg/icon-check.svg);
+    background-origin: border-box;
+  }
+
+  &__text {
+    line-height: 1.71px;
+  }
+
+  &__link {
+    line-height: 1.71;
+    text-decoration-line: underline;
+    color: $accent-link-color;
+  }
+}

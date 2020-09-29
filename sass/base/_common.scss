@@ -1,0 +1,101 @@
+/*ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}*/
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color-black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $text-color-gray;
+}
+
+.container {
+  @include marginauto();
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+}
+
+.section {
+  /* @include marginauto();*/
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 30px;
+  @include font(28px, 1.18, 700);
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    @include font(36px, 1.17, 700);
+  }
+}
+
+/*
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  max-width: 1600px;
+  @include marginauto();
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+  @include font(36px, 1.17, 700);
+  text-align: center;
+}
+
+
+.join-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  @include font(14px, 1.14, 700);
+  text-transform: uppercase;
+  color: $primary-color;
+}
+*/
+
+.link {
+  transition: $time $time-function;
+}
